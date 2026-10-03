@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Samile Nail Studio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento - Samile Nail Studio</h1>
+        <p>Bem-vindo ao Samile Nail Studio. Por favor, selecione uma data e horário disponíveis para marcar seu atendimento.</p>
+        <form id="agendamento-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="atendimento">Tipo de atendimento:</label>
+            <select id="atendimento" name="atendimento" required>
+                <option value="">Selecione um atendimento</option>
+                <option value="manicure">Manicure</option>
+                <option value="pedicure">Pedicure</option>
+                <option value="manicure-pedicure">Manicure e pedicure</option>
+                <option value="esmaltação em gel">Esmaltação em gel</option>
+                <option value="blinagem em gel">Blindagem em gel</option>
+                <option value="alongamento">Alongamento de unhas</option>
+                <option value="manutencao">Manutenção de alongamento</option>
+            </select>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="horario">Horário:</label>
+            <select id="horario" name="horario" required>
+                <option value="">Selecione um horário</option>
+                <option value="08:00">08:00</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+            </select>
+
+            <button type="submit">Agendar</button>
+        </form>
+        <p id="mensagem-status" class="mensagem-status" role="status" aria-live="polite"></p>
+    </div>
+</body>
+</html>
